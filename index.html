@@ -6,7 +6,7 @@
 <title>KnR Scripts — Premium FiveM Scripts by 神薙るい</title>
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300e5ff'/%3E%3Cstop offset='100%25' stop-color='%23D4AF37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0f'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='bold' fill='url(%23g)' text-anchor='middle'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2339ff14'/%3E%3Cstop offset='100%25' stop-color='%2300c853'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='6' fill='%230a0a0f'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='bold' fill='url(%23g)' text-anchor='middle'%3E%26lt;/%26gt%3C/text%3E%3C/svg%3E">
 
 <meta name="description" content="プレミアムFiveM スクリプトコレクション。QBCore対応、サイバーパンクUI。">
 
@@ -28,7 +28,7 @@
 <meta name="twitter:image" content="https://i.imgur.com/Vj93jRn.png">
 
 <!-- Theme Color (Discord embed color) -->
-<meta name="theme-color" content="#D4AF37">
+<meta name="theme-color" content="#39ff14">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script defer src="https://js.tebex.io/v/1.js"></script>
@@ -49,7 +49,7 @@ const STORE_CONFIG = {
   tebexStoreDomain: "knr-scripts.tebex.io",
   tebexPublicToken: "11lfz-668e2674df14388ff003d01cbcc532e18af505cc",
 
-  discordUrl: "https://discord.gg/5FqCEnvEZ2",
+  discordUrl: "https://discord.com/users/912030317496373249",
   githubUrl: "https://github.com/your-username",
   tebexUrl: "https://knr-scripts.tebex.io",
   docsUrl: "",
@@ -69,7 +69,7 @@ const STORE_CONFIG = {
       desc: "業種別の請求書発行・ジョブ間請求・個人請求をすべて網羅した請求書システム。\nQBox / ox_lib / ox_inventory 完全対応。\n\n【主な機能】\n• 職業別プリセット — ジョブごとに自由なメニュー・価格を設定\n• 個人請求 — 任意の相手に自由な金額で請求\n• ジョブ間請求（B2B） — メカニック → 警察 のような業種間請求\n• 個数選択モーダル — 個数 × 単価 を自動計算（最大1000個）\n• ox_inventory スタッシュ対応 — 現金アイテムとして金庫へ送付\n• KnR-jobvault 連携 — ジョブ金庫をUIで一元管理\n• 近くのプレイヤー自動検出 — 10m以内のプレイヤーを請求先に選択\n• 自動強制徴収 — 期限超過の請求書を自動徴収\n• 全件検索 — 管理者が請求書を横断検索（不正調査用）\n• プリセット編集 — ゲーム内UIから項目の追加/削除が可能\n• クライアント設定 — サウンド・表示・操作を購入者側で切替可能\n• モダンな React UI — YuzuCity Terminal デザイン",
       price: 20.00,
       badge: "NEW RELEASE",
-      badgeColor: "#c9a227",
+      badgeColor: "#39ff14",
       features: ["職業別プリセット", "個人請求", "ジョブ間請求", "個数選択", "jobvault 連携", "自動強制徴収"],
       category: "economy",
       framework: "QBCore / QBox",
@@ -87,7 +87,7 @@ const STORE_CONFIG = {
       desc: "ジョブ・グレード制限付きの金庫スタッシュをAdmin UIで一元管理できるジョブ金庫システム。\nQBox / ox_lib / ox_inventory / ox_target 完全対応。\n\n【主な機能】\n• ジョブ・グレード別アクセス制限 — 指定グレード以上のみ開ける\n• Admin UI で金庫管理 — /vaultadmin で設置・編集・移動・削除・テレポート\n• 金庫 Prop 自動設置 — 3Dモデル・マーカー・ターゲットゾーンを自動配置\n• KVP 永続化 — UIで作成した金庫はサーバー再起動後も維持\n• 固定金庫 / 動的金庫の2方式に対応\n• 複数金庫の一元管理 — 1リソースで全ジョブの金庫を管理\n• Discord 通知 — 金庫からの現金持ち出しを自動記録\n• KnR_invoice 連携 — 請求書の支払い先として使用可能\n• 他リソース連携エクスポート — GetStashForJob(job) で取得可能\n• ox_target 連携 — 近づくだけでインタラクション表示",
       price: 13.00,
       badge: "NEW RELEASE",
-      badgeColor: "#c9a227",
+      badgeColor: "#00ff88",
       features: ["ジョブ制限", "Admin UI", "KVP 永続化", "Discord 通知", "Prop 自動設置", "KnR_invoice 連携"],
       category: "job",
       framework: "QBCore / QBox",
@@ -105,7 +105,7 @@ const STORE_CONFIG = {
       desc: "KnR_invoice と KnR_jobvault をセットでお得に購入できるバンドル商品。\n単体購入より $5.00 お得です。\n\n【含まれる商品】\n• KnR_invoice（単体 $20.00） — 業種別カスタム請求書システム\n• KnR_jobvault（単体 $13.00） — ジョブ別金庫管理システム\n\n【単体合計】$33.00\n【セット価格】$28.00（$5.00 お得）\n\n【相性の良い理由】\nKnR_jobvault の金庫を KnR_invoice の支払い先として指定することで、\n請求書の支払いがジョブ金庫に自動入金されます。\n\n請求書発行 → 支払い → ジョブ金庫に自動入金 → 幹部が金庫から取り出し\n\nCFX Keymaster 経由で両方のアセットが自動付与されます。",
       price: 28.00,
       badge: "BUNDLE",
-      badgeColor: "#fbbf24",
+      badgeColor: "#00c853",
       features: ["2スクリプトセット", "$5.00 お得", "完全連携", "CFX Keymaster 納品"],
       category: "bundle",
       framework: "QBCore / QBox",
@@ -149,7 +149,7 @@ const STORE_CONFIG = {
     skills: ["Lua", "JavaScript", "Vue.js", "Svelte", "QBCore"],
     avatar: "https://i.imgur.com/DXKe5Kf.jpeg",
     socialLinks: {
-      discord: "https://discord.gg/5FqCEnvEZ2",
+      discord: "https://discord.com/users/912030317496373249",
       github: "https://github.com/your-username",
     }
   },
@@ -166,23 +166,23 @@ const STORE_CONFIG = {
 
 <style>
 /* ═══════════════════════════════════════════════════════════════
-   KnR Scripts — Luxury Edition
+   KnR Scripts — Neon Emerald Edition
 ═══════════════════════════════════════════════════════════════ */
 :root {
   --bg-void: #050507;
   --bg-deep: #0a0a0e;
   --bg-surface: #0f0f14;
   --bg-elevated: #141419;
-  --gold-brilliant: #e8c547;
-  --gold-pure: #d4af37;
-  --gold-deep: #b8941f;
-  --gold-shadow: rgba(212, 175, 55, 0.15);
-  --gold-glow: rgba(212, 175, 55, 0.4);
+  --gold-brilliant: #39ff14;
+  --gold-pure: #00ff88;
+  --gold-deep: #00c853;
+  --gold-shadow: rgba(57, 255, 20, 0.22);
+  --gold-glow: rgba(57, 255, 20, 0.55);
   --platinum: #e8e8e8;
   --silver: #a0a0a0;
   --muted: #606060;
-  --border-subtle: rgba(212, 175, 55, 0.12);
-  --border-accent: rgba(212, 175, 55, 0.35);
+  --border-subtle: rgba(0, 255, 136, 0.15);
+  --border-accent: rgba(57, 255, 20, 0.45);
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -270,14 +270,14 @@ body {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   position: relative;
   background: 
-    radial-gradient(ellipse 120% 60% at 50% 0%, rgba(212, 175, 55, 0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 80% 80% at 20% 100%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
-    radial-gradient(ellipse 80% 80% at 80% 100%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse 120% 60% at 50% 0%, rgba(57, 255, 20, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 80% at 20% 100%, rgba(0, 255, 136, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 80% at 80% 100%, rgba(0, 255, 136, 0.08) 0%, transparent 50%),
     var(--bg-void);
 }
 .hero::before {
   content: ''; position: absolute; inset: 0; pointer-events: none;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='50' x2='100' y2='50' stroke='%23d4af37' stroke-width='0.1' opacity='0.1'/%3E%3Cline x1='50' y1='0' x2='50' y2='100' stroke='%23d4af37' stroke-width='0.1' opacity='0.1'/%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='50' x2='100' y2='50' stroke='%2339ff14' stroke-width='0.1' opacity='0.1'/%3E%3Cline x1='50' y1='0' x2='50' y2='100' stroke='%2339ff14' stroke-width='0.1' opacity='0.1'/%3E%3C/svg%3E");
   background-size: 120px 120px;
   opacity: 0.4;
 }
@@ -339,7 +339,7 @@ body {
   cursor: pointer; text-decoration: none;
   position: relative; overflow: hidden;
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 30px var(--gold-shadow), inset 0 1px 0 rgba(255,255,255,0.2);
+  box-shadow: 0 4px 30px var(--gold-shadow), 0 0 20px rgba(57, 255, 20, 0.3), inset 0 1px 0 rgba(255,255,255,0.2);
 }
 .btn-gold::before {
   content: ''; position: absolute; inset: 0;
@@ -349,7 +349,7 @@ body {
 }
 .btn-gold:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 50px var(--gold-glow), inset 0 1px 0 rgba(255,255,255,0.3);
+  box-shadow: 0 12px 60px var(--gold-glow), 0 0 30px rgba(57, 255, 20, 0.6), inset 0 1px 0 rgba(255,255,255,0.3);
 }
 .btn-gold:hover::before { transform: translateX(100%); }
 
@@ -366,7 +366,7 @@ body {
 .btn-outline:hover {
   background: var(--gold-shadow);
   border-color: var(--gold-pure);
-  box-shadow: 0 0 40px var(--gold-shadow);
+  box-shadow: 0 0 40px var(--gold-shadow), 0 0 20px rgba(57, 255, 20, 0.4);
 }
 
 /* ── Scroll Indicator ── */
@@ -465,7 +465,7 @@ body {
   background: linear-gradient(135deg, var(--gold-pure), var(--gold-deep));
   border-color: var(--gold-pure);
   color: var(--bg-void);
-  box-shadow: 0 4px 20px var(--gold-shadow);
+  box-shadow: 0 4px 20px var(--gold-shadow), 0 0 15px rgba(57, 255, 20, 0.4);
 }
 
 /* ── Product Grid ── */
@@ -490,7 +490,7 @@ body {
 .product:hover {
   transform: translateY(-16px);
   border-color: var(--border-accent);
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), 0 0 60px var(--gold-shadow);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), 0 0 80px rgba(57, 255, 20, 0.35);
 }
 .product:hover::before { opacity: 1; }
 
@@ -515,12 +515,12 @@ body {
   display: flex; align-items: center; justify-content: center;
   background: 
     linear-gradient(135deg, var(--bg-deep) 0%, var(--bg-surface) 50%, var(--bg-deep) 100%),
-    repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(212, 175, 55, 0.02) 20px, rgba(212, 175, 55, 0.02) 40px);
+    repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(57, 255, 20, 0.02) 20px, rgba(57, 255, 20, 0.02) 40px);
 }
 .product-placeholder-text {
   font-family: 'Orbitron', sans-serif;
   font-size: 36px; font-weight: 800;
-  color: rgba(212, 175, 55, 0.08);
+  color: rgba(57, 255, 20, 0.08);
   letter-spacing: 6px;
 }
 .product-badge {
@@ -561,7 +561,7 @@ body {
 }
 .product-tag:hover {
   border-color: var(--border-accent);
-  background: rgba(212, 175, 55, 0.2);
+  background: rgba(57, 255, 20, 0.25);
 }
 .product-footer {
   display: flex; justify-content: space-between; align-items: center;
@@ -590,6 +590,7 @@ body {
 .product-btn:hover {
   background: var(--gold-pure);
   color: var(--bg-void);
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
 }
 
 /* ── Modal ── */
@@ -759,11 +760,11 @@ body {
   font-size: 13px; font-weight: 700; letter-spacing: 3px;
   cursor: pointer;
   transition: all 0.4s ease;
-  box-shadow: 0 6px 30px var(--gold-shadow);
+  box-shadow: 0 6px 30px var(--gold-shadow), 0 0 20px rgba(57, 255, 20, 0.4);
 }
 .modal-purchase:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 50px var(--gold-glow);
+  box-shadow: 0 12px 60px var(--gold-glow), 0 0 40px rgba(57, 255, 20, 0.55);
 }
 .modal-purchase:disabled { opacity: 0.4; cursor: not-allowed; transform: none !important; }
 
@@ -1008,11 +1009,13 @@ body {
   z-index: 9998;
   transition: transform 0.15s ease, border-color 0.3s ease, background 0.3s ease;
   transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.4);
 }
 .custom-cursor.hover {
   transform: translate(-50%, -50%) scale(1.5);
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(57, 255, 20, 0.15);
   border-color: var(--gold-brilliant);
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.7);
 }
 .custom-cursor-dot {
   position: fixed;
@@ -1023,6 +1026,7 @@ body {
   pointer-events: none;
   z-index: 9998;
   transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px rgba(57, 255, 20, 0.9);
 }
 body { cursor: none; }
 a, button, .product, .filter-btn, .faq-question { cursor: none; }
@@ -1037,6 +1041,7 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
   background: linear-gradient(90deg, var(--gold-deep), var(--gold-pure), var(--gold-brilliant));
   z-index: 1001;
   transition: width 0.1s ease;
+  box-shadow: 0 0 12px rgba(57, 255, 20, 0.8);
 }
 
 /* ── Back to Top Button ── */
@@ -1066,6 +1071,7 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
   background: var(--gold-pure);
   color: var(--bg-void);
   transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(57, 255, 20, 0.7);
 }
 
 /* ── Section Navigation (Dot Nav) ── */
@@ -1109,6 +1115,7 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
 .section-nav-dot.active {
   background: var(--gold-pure);
   transform: scale(1.3);
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.9);
 }
 
 /* ── Particle Background ── */
@@ -1167,7 +1174,7 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
 .product:hover {
   box-shadow: 
     0 25px 60px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(212, 175, 55, 0.1);
+    0 0 40px rgba(57, 255, 20, 0.25);
 }
 .product-shine {
   position: absolute;
@@ -1332,7 +1339,7 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
   margin-top: 10px;
 }
 .roadmap-status.development {
-  background: rgba(212, 175, 55, 0.2);
+  background: rgba(57, 255, 20, 0.2);
   color: var(--gold-brilliant);
   border: 1px solid var(--gold-pure);
 }
@@ -1559,9 +1566,10 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
   right: -5px;
   width: 12px;
   height: 12px;
-  background: #57F287;
+  background: #39ff14;
   border-radius: 50%;
   animation: chatPulse 2s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.9);
 }
 @keyframes chatPulse {
   0%, 100% { transform: scale(1); opacity: 1; }
@@ -1629,14 +1637,15 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
   align-items: center;
   gap: 10px;
   padding: 12px 20px;
-  background: rgba(212, 175, 55, 0.05);
+  background: rgba(57, 255, 20, 0.05);
   border: 1px solid var(--border-subtle);
   transition: all 0.3s ease;
 }
 .trust-badge:hover {
   border-color: var(--gold-pure);
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(57, 255, 20, 0.12);
   transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.25);
 }
 .trust-badge-icon {
   font-size: 20px;
@@ -1755,7 +1764,7 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 3px;
-  background: linear-gradient(135deg, #00d4aa 0%, #00a885 100%);
+  background: linear-gradient(135deg, #39ff14 0%, #00c853 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
@@ -1861,35 +1870,23 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
   }
 }
 
-/* ── 1. Scroll Progress Bar ── */
-.scroll-progress {
-  position: fixed;
-  top: 0; left: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--gold), var(--champagne), var(--gold));
-  width: 0%;
-  z-index: 10001;
-  transition: width 0.1s ease-out;
-  box-shadow: 0 0 10px var(--gold-glow);
-}
-
-/* ── 3. Section Separator Lines ── */
+/* ── Section Separator Lines ── */
 .section-separator {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), var(--champagne), var(--gold), transparent);
+  background: linear-gradient(90deg, transparent, var(--gold-pure), var(--gold-brilliant), var(--gold-pure), transparent);
   margin: 0 auto;
   opacity: 0.5;
 }
 
-/* ── 4. Card Shine Effect ── */
+/* ── Card Shine Effect ── */
 .product::after {
   content: '';
   position: absolute;
   top: 0; left: -100%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.15), transparent);
+  background: linear-gradient(90deg, transparent, rgba(57, 255, 20, 0.2), transparent);
   transform: skewX(-25deg);
   transition: left 0.6s ease;
   pointer-events: none;
@@ -1916,9 +1913,6 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
 <!-- Particles Background -->
 <canvas id="particles-canvas"></canvas>
 
-<!-- Scroll Progress Bar -->
-<div class="scroll-progress" id="scroll-progress"></div>
-
 <!-- Section Navigation -->
 <nav class="section-nav" id="section-nav">
   <button class="section-nav-dot" data-section="hero" data-label="HOME"></button>
@@ -1932,13 +1926,13 @@ a, button, .product, .filter-btn, .faq-question { cursor: none; }
 <button class="back-to-top" id="back-to-top">↑</button>
 
 <!-- Live Chat Button -->
-<a href="https://discord.gg/5FqCEnvEZ2" target="_blank" rel="noopener" class="live-chat-btn" id="live-chat-btn">
+<a href="https://discord.com/users/912030317496373249" target="_blank" rel="noopener" class="live-chat-btn" id="live-chat-btn">
   <span class="live-chat-pulse"></span>
   <svg class="live-chat-icon" viewBox="0 0 24 24" fill="currentColor">
     <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
   </svg>
   <span class="live-chat-text">質問がある？</span>
-  <span class="chat-tooltip">Discordでサポートを受ける 💬</span>
+  <span class="chat-tooltip">DiscordでDMを送る 💬</span>
 </a>
 
 <!-- Navigation -->
@@ -2204,7 +2198,6 @@ function updateGallery() {
 }
 
 // Tebex Headless API を使った埋め込みチェックアウト
-// FiveMストアは認証が必要なため、認証フローを実装
 async function tebexCheckout(pkgId) {
   const btn = document.querySelector('.modal-purchase');
   if (btn) {
@@ -2213,29 +2206,23 @@ async function tebexCheckout(pkgId) {
   }
   
   try {
-    // URLパラメータをチェック（認証後の戻り）
     const urlParams = new URLSearchParams(window.location.search);
     const basketIdent = urlParams.get('basketIdent');
     const authenticated = urlParams.get('authenticated');
     
     if (basketIdent && authenticated === 'true') {
-      // 認証済み - パッケージを追加してチェックアウト
       await addPackageAndCheckout(basketIdent, pkgId, btn);
     } else {
-      // 新規 - バスケット作成して認証へ
       await createBasketAndAuth(pkgId, btn);
     }
   } catch (error) {
     console.error('Checkout error:', error);
     resetBtn(btn);
-    // フォールバック: 直接Tebexストアに移動
     window.open(`https://${C.tebexStoreDomain}/package/${pkgId}`, '_blank');
   }
 }
 
-// バスケット作成と認証
 async function createBasketAndAuth(pkgId, btn) {
-  // 1. バスケットを作成
   const returnUrl = `${window.location.origin}${window.location.pathname}?authenticated=true&pkgId=${pkgId}`;
   
   const basketRes = await fetch(`https://headless.tebex.io/api/accounts/${C.tebexPublicToken}/baskets`, {
@@ -2252,31 +2239,25 @@ async function createBasketAndAuth(pkgId, btn) {
   const basketData = await basketRes.json();
   const basketIdent = basketData.data.ident;
   
-  // 2. 認証URLを取得
   const authUrl = `${window.location.origin}${window.location.pathname}?basketIdent=${basketIdent}&authenticated=true&pkgId=${pkgId}`;
   const authRes = await fetch(`https://headless.tebex.io/api/accounts/${C.tebexPublicToken}/baskets/${basketIdent}/auth?returnUrl=${encodeURIComponent(authUrl)}`);
   
   if (!authRes.ok) throw new Error('Failed to get auth URL');
   const authData = await authRes.json();
   
-  // 3. FiveM認証ページにリダイレクト
   if (authData && authData.length > 0 && authData[0].url) {
     window.location.href = authData[0].url;
   } else {
-    // 認証不要の場合は直接パッケージ追加
     await addPackageAndCheckout(basketIdent, pkgId, btn);
   }
 }
 
-// パッケージ追加とチェックアウト
 async function addPackageAndCheckout(basketIdent, pkgId, btn) {
-  // URLからpkgIdを取得（認証後の戻りの場合）
   if (!pkgId) {
     const urlParams = new URLSearchParams(window.location.search);
     pkgId = urlParams.get('pkgId');
   }
   
-  // パッケージを追加
   const addRes = await fetch(`https://headless.tebex.io/api/baskets/${basketIdent}/packages`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -2292,10 +2273,8 @@ async function addPackageAndCheckout(basketIdent, pkgId, btn) {
     throw new Error('Failed to add package');
   }
   
-  // URLパラメータをクリア
   window.history.replaceState({}, document.title, window.location.pathname);
   
-  // Tebex.jsでチェックアウト
   if (typeof Tebex !== 'undefined' && Tebex.checkout) {
     Tebex.checkout.init({
       ident: basketIdent,
@@ -2308,7 +2287,6 @@ async function addPackageAndCheckout(basketIdent, pkgId, btn) {
   }
 }
 
-// ページ読み込み時に認証後の処理をチェック
 document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
   const basketIdent = urlParams.get('basketIdent');
@@ -2316,7 +2294,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const pkgId = urlParams.get('pkgId');
   
   if (basketIdent && authenticated === 'true' && pkgId) {
-    // 認証後の自動チェックアウト
     addPackageAndCheckout(basketIdent, pkgId, null);
   }
 });
@@ -2517,7 +2494,6 @@ function initScroll() {
 //  NEW FEATURES - JavaScript
 // ═══════════════════════════════════════════════════════════════
 
-// Loading Screen
 function initLoadingScreen() {
   const loadingScreen = document.getElementById('loading-screen');
   window.addEventListener('load', () => {
@@ -2527,14 +2503,12 @@ function initLoadingScreen() {
   });
 }
 
-// Custom Cursor
 function initCustomCursor() {
   const cursor = document.getElementById('cursor');
   const cursorDot = document.getElementById('cursor-dot');
   
   if (!cursor || !cursorDot) return;
   
-  // Check if touch device
   if ('ontouchstart' in window) {
     cursor.style.display = 'none';
     cursorDot.style.display = 'none';
@@ -2548,7 +2522,6 @@ function initCustomCursor() {
     cursorDot.style.top = e.clientY + 'px';
   });
   
-  // Add hover effect for interactive elements
   const hoverElements = document.querySelectorAll('a, button, .product, .filter-btn, .faq-question');
   hoverElements.forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
@@ -2556,19 +2529,18 @@ function initCustomCursor() {
   });
 }
 
-// Scroll Progress Bar
 function initScrollProgress() {
   const progressBar = document.getElementById('scroll-progress');
+  if (!progressBar) return;
   
   window.addEventListener('scroll', () => {
-    const scrollTop = document.documentElement.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const progress = (scrollTop / scrollHeight) * 100;
-    progressBar.style.width = progress + '%';
-  }, { passive: true });
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    progressBar.style.width = scrollPercent + '%';
+  });
 }
 
-// Back to Top Button
 function initBackToTop() {
   const btn = document.getElementById('back-to-top');
   
@@ -2581,7 +2553,6 @@ function initBackToTop() {
   });
 }
 
-// Section Navigation
 function initSectionNav() {
   const dots = document.querySelectorAll('.section-nav-dot');
   const sections = ['hero', 'products', 'developer', 'changelog', 'faq'];
@@ -2596,7 +2567,6 @@ function initSectionNav() {
     });
   });
   
-  // Update active dot on scroll
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(id => {
@@ -2615,7 +2585,6 @@ function initSectionNav() {
   }, { passive: true });
 }
 
-// Particle Background
 function initParticles() {
   const canvas = document.getElementById('particles-canvas');
   const ctx = canvas.getContext('2d');
@@ -2649,7 +2618,6 @@ function initParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     particles.forEach(p => {
-      // Mouse attraction
       const dx = mouseX - p.x;
       const dy = mouseY - p.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
@@ -2662,20 +2630,17 @@ function initParticles() {
       p.x += p.speedX;
       p.y += p.speedY;
       
-      // Wrap around screen
       if (p.x < 0) p.x = canvas.width;
       if (p.x > canvas.width) p.x = 0;
       if (p.y < 0) p.y = canvas.height;
       if (p.y > canvas.height) p.y = 0;
       
-      // Draw particle
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(212, 175, 55, ${p.opacity})`;
+      ctx.fillStyle = `rgba(57, 255, 20, ${p.opacity})`;
       ctx.fill();
     });
     
-    // Draw connections
     particles.forEach((p1, i) => {
       particles.slice(i + 1).forEach(p2 => {
         const dx = p1.x - p2.x;
@@ -2686,7 +2651,7 @@ function initParticles() {
           ctx.beginPath();
           ctx.moveTo(p1.x, p1.y);
           ctx.lineTo(p2.x, p2.y);
-          ctx.strokeStyle = `rgba(212, 175, 55, ${0.1 * (1 - dist / 100)})`;
+          ctx.strokeStyle = `rgba(0, 255, 136, ${0.15 * (1 - dist / 100)})`;
           ctx.stroke();
         }
       });
@@ -2710,10 +2675,8 @@ function initParticles() {
   });
 }
 
-// 3D Tilt Cards
 function init3DTilt() {
   document.querySelectorAll('.product').forEach(card => {
-    // Add shine element
     const shine = document.createElement('div');
     shine.className = 'product-shine';
     card.appendChild(shine);
@@ -2729,8 +2692,7 @@ function init3DTilt() {
       
       card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
       
-      // Move shine
-      shine.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.15) 0%, transparent 50%)`;
+      shine.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(57,255,20,0.2) 0%, transparent 50%)`;
     });
     
     card.addEventListener('mouseleave', () => {
@@ -2739,7 +2701,6 @@ function init3DTilt() {
   });
 }
 
-// Render Developer Section
 function renderDeveloper() {
   const dev = C.developer;
   if (!dev) return;
@@ -2763,7 +2724,6 @@ function renderDeveloper() {
   `;
 }
 
-// Render Changelog
 function renderChangelog() {
   const changelog = C.changelog;
   if (!changelog || !changelog.length) return;
@@ -2786,23 +2746,18 @@ function renderChangelog() {
 }
 
 function init() {
-  // Loading screen first
   initLoadingScreen();
   
-  // Original renders
   renderNav(); renderHero(); renderStats(); renderFilters(); renderProducts(); renderReviews(); renderFaq(); renderFooter();
   
-  // New renders
   renderDeveloper();
   renderChangelog();
   
-  // Set live chat link
   const chatBtn = document.getElementById('live-chat-btn');
   if (chatBtn && C.discordUrl) {
     chatBtn.href = C.discordUrl;
   }
   
-  // Init features
   initReveal(); initScroll();
   initCustomCursor();
   initScrollProgress();
@@ -2810,21 +2765,7 @@ function init() {
   initSectionNav();
   initParticles();
   
-  // Init 3D tilt after products render
   setTimeout(init3DTilt, 100);
-}
-
-// Scroll Progress Bar
-function initScrollProgress() {
-  const progressBar = document.getElementById('scroll-progress');
-  if (!progressBar) return;
-  
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    progressBar.style.width = scrollPercent + '%';
-  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
