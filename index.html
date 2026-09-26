@@ -57,7 +57,7 @@ const STORE_CONFIG = {
   stats: [
     { value: "1+", label: "SALES" },
     { value: "1+", label: "SERVERS" },
-    { value: "1", label: "SCRIPTS" },
+    { value: "3", label: "SCRIPTS" },
     { value: "24/7", label: "SUPPORT" },
   ],
 
@@ -80,10 +80,47 @@ const STORE_CONFIG = {
       tebexPackageId: 7269558,
       docsUrl: "",
     },
+    {
+      id: 2,
+      name: "KnR_jobvault",
+      tagline: "Job Vault Management System",
+      desc: "ジョブ・グレード制限付きの金庫スタッシュをAdmin UIで一元管理できるジョブ金庫システム。\nQBox / ox_lib / ox_inventory / ox_target 完全対応。\n\n【主な機能】\n• ジョブ・グレード別アクセス制限 — 指定グレード以上のみ開ける\n• Admin UI で金庫管理 — /vaultadmin で設置・編集・移動・削除・テレポート\n• 金庫 Prop 自動設置 — 3Dモデル・マーカー・ターゲットゾーンを自動配置\n• KVP 永続化 — UIで作成した金庫はサーバー再起動後も維持\n• 固定金庫 / 動的金庫の2方式に対応\n• 複数金庫の一元管理 — 1リソースで全ジョブの金庫を管理\n• Discord 通知 — 金庫からの現金持ち出しを自動記録\n• KnR_invoice 連携 — 請求書の支払い先として使用可能\n• 他リソース連携エクスポート — GetStashForJob(job) で取得可能\n• ox_target 連携 — 近づくだけでインタラクション表示",
+      price: 13.00,
+      badge: "NEW RELEASE",
+      badgeColor: "#c9a227",
+      features: ["ジョブ制限", "Admin UI", "KVP 永続化", "Discord 通知", "Prop 自動設置", "KnR_invoice 連携"],
+      category: "job",
+      framework: "QBCore / QBox",
+      language: "Lua / JS",
+      image: "https://i.imgur.com/3xpb1oU.png",
+      previewImages: [],
+      tebexUrl: "",
+      tebexPackageId: 7697083,
+      docsUrl: "",
+    },
+    {
+      id: 3,
+      name: "KnR 2点セット",
+      tagline: "Invoice + JobVault Bundle",
+      desc: "KnR_invoice と KnR_jobvault をセットでお得に購入できるバンドル商品。\n単体購入より $5.00 お得です。\n\n【含まれる商品】\n• KnR_invoice（単体 $20.00） — 業種別カスタム請求書システム\n• KnR_jobvault（単体 $13.00） — ジョブ別金庫管理システム\n\n【単体合計】$33.00\n【セット価格】$28.00（$5.00 お得）\n\n【相性の良い理由】\nKnR_jobvault の金庫を KnR_invoice の支払い先として指定することで、\n請求書の支払いがジョブ金庫に自動入金されます。\n\n請求書発行 → 支払い → ジョブ金庫に自動入金 → 幹部が金庫から取り出し\n\nCFX Keymaster 経由で両方のアセットが自動付与されます。",
+      price: 28.00,
+      badge: "BUNDLE",
+      badgeColor: "#fbbf24",
+      features: ["2スクリプトセット", "$5.00 お得", "完全連携", "CFX Keymaster 納品"],
+      category: "bundle",
+      framework: "QBCore / QBox",
+      language: "Lua / JS / React",
+      image: "https://i.imgur.com/2UN99uU.png",
+      previewImages: [],
+      tebexUrl: "",
+      tebexPackageId: 7697119,
+      docsUrl: "",
+    },
   ],
 
   categories: [
     { key: "all", label: "ALL" },
+    { key: "bundle", label: "BUNDLE" },
     { key: "economy", label: "ECONOMY" },
     { key: "job", label: "JOB" },
     { key: "crime", label: "CRIME" },
@@ -119,6 +156,8 @@ const STORE_CONFIG = {
 
   // アップデート履歴
   changelog: [
+    { date: "2026-09-26", version: "2.0.0", script: "KnR_jobvault", changes: ["初回リリース", "Admin UI 対応", "KVP 永続化", "Discord 通知"] },
+    { date: "2026-09-26", version: "1.0.0", script: "KnR 2点セット", changes: ["セット販売開始", "KnR_invoice + KnR_jobvault"] },
     { date: "2026-XX-XX", version: "2.4.3", script: "KnR_invoice", changes: ["初回リリース"] },
   ],
 
